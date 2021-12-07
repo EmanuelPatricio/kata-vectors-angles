@@ -13,4 +13,8 @@ module.exports = class Vector {
   dotProduct(otherVector) {
     return (this.x * otherVector.x) + (this.y * otherVector.y);
   }
+
+  angleBetween(otherVector) {
+    return Math.acos(this.dotProduct(otherVector) / (this.magnitude() * otherVector.magnitude())) * 180/Math.PI;
+  }
 }

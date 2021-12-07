@@ -12,4 +12,8 @@ describe('Vector', () => {
   it('dotProduct() method returns a float number', () => {
     expect(vector.dotProduct(vectorB)).toBe(11);
   });
+
+  it('angleBetween() method returns a float number', () => {
+    expect(vector.angleBetween(vectorB)).toBe(10.304846468766044);
+  });
 });
