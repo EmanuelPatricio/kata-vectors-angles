@@ -9,4 +9,8 @@ module.exports = class Vector {
   magnitude() {
     return Math.sqrt((this.x * this.x) + (this.y * this.y));
   }
+
+  dotProduct(otherVector) {
+    return (this.x * otherVector.x) + (this.y * otherVector.y);
+  }
 }
